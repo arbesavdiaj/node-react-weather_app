@@ -1,3 +1,14 @@
+body {
+    background-image: url(./weather.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Centers the background image */
+    height: 100vh; /* Sets the body height to 100% of the viewport height */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    overflow: hidden;
+}
+
 .container {
   width: 607px;
   height: 829px;
