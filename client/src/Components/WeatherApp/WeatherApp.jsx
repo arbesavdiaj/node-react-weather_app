@@ -70,10 +70,21 @@ const WeatherApp = () => {
     }
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      search();
+    }
+  };
+
   return (
     <div className="container">
       <div className="top-bar">
-        <input type="text" className="cityInput" placeholder="Search" />
+        <input
+          type="text"
+          className="cityInput"
+          placeholder="Search"
+          onKeyPress={handleKeyPress} // Add event listener for Enter key press
+        />
         <div
           className="search-icon"
           onClick={() => {
